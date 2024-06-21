@@ -11,11 +11,13 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
+
+/*  COLORS
+    black: #231C18;
+    cream: #FCF6EB;
+
+*/
+
 
 /*
  * Remove text-shadow in selection highlight:

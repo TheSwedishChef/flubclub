@@ -1,0 +1,17 @@
+
+@font-face {
+    font-family: 'comics';
+    src: url('./fonts/comicsdeluxe-webfont.woff2') format('woff2'),
+         url('./fonts/comicsdeluxe-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'feijoada';
+    src: url('./fonts/feijoada-webfont.woff2') format('woff2'),
+         url('./fonts/feijoada-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

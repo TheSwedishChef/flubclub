@@ -1,0 +1,35 @@
+#faq button {
+    background-color: inherit;
+    border: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+}
+
+#faq button:hover {
+    color: var(--dark-pink);
+}
+
+#faq h3:not(:first-of-type) {
+    border-top: 2px solid var(--light-pink);
+}
+
+@media screen and (max-width: 750px) {
+    #faq {
+        width: 350px;
+        box-sizing: border-box;
+    }
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

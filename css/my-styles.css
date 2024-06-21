@@ -1,0 +1,303 @@
+:root {
+	--white: #fff;
+	--white-hover: #EFEFEF;
+	--white-active: #ccc;
+	
+	--black: #231C18; /* hsl(22,19,12,100) */
+	--black-hover-active: #000;
+	
+	--red: #FF5A57; /* hsl(1,100,67,100) */
+	--red-hover: #FF3A37;
+	--red-active: #CF0400;
+
+	--cream: #FCF6EB; /* hsl(39,74,95,100) */
+	--cream-hover: #ECE2D1;
+	--cream-active: #C6B9A3;
+	
+}
+
+html {
+	color: #231C18;
+	font-size: 1.25em; /* 20px */
+	line-height: 1.125;
+}
+
+html, body {
+	background-color: var(--cream);
+}
+
+h1 { font-size: 64px }
+h2 { font-size: 44px }
+h3, .button, legend { font-size: 28px }
+h4 { font-size: 22px }
+h5, dt { font-size: 18px }
+
+h1, h2, h3, h4, h5 {
+	text-transform: uppercase;
+}
+
+.blur-black {
+	text-shadow: 0 0 1.5px var(--black);
+}
+.blur-white {
+	text-shadow: 0 0 1.5px var(--white);
+}
+.blur-cream {
+	text-shadow: 0 0 1.5px var(--cream);
+}
+
+.subtitle { font-size: 44px }
+.body-regular { font-size: 28px }
+.body-medium { font-size: 22px }
+.body-small { font-size: 18px }
+
+.subtitle, .body-regular, .body-medium, .body-small {
+	line-height: 118.7%
+}
+
+ol {
+	margin: 0;
+}
+
+@font-face {
+	font-family: 'comics';
+	src: url('../fonts/comicsdeluxe-webfont.woff2') format('woff2'),
+		 url('../fonts/comicsdeluxe-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'feijoada';
+	src: url('../fonts/feijoada-webfont.woff2') format('woff2'),
+		 url('../fonts/feijoada-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.container > div:not(last-child) {
+	margin-bottom: 8rem;
+}
+
+.readable, #faq > div {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+a { text-decoration: underline; color: #231C18; }
+
+.button {
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: var(--red);;
+	color: var(--white);;
+	height: 4rem;
+	line-height: 4rem;
+	display: inline-block !important;
+	padding: 0 1rem;
+	border: 0 none;
+	outline: 0;
+	cursor: pointer;
+	/* transition: all .2s ease-in-out; */
+}
+
+.button:hover { background-color: var(--red-hover) }
+.button:active { background-color: var(--red-active) }
+
+button {
+	font-family: feijoada;
+}
+
+#what-is-it {
+	text-align: center;
+}
+
+input[type=email] {
+	font-family: feijoada;
+	height: 4rem;
+	border: 0 none;
+	border-radius: 0;
+	outline: 0 none;
+	padding: 0 1rem;
+	line-height: 4rem;
+	margin: 0;
+	flex-grow: 2;
+}
+
+form#newsletter {
+	width: auto;
+	margin: 0 auto;
+}
+
+fieldset {
+	display: flex;
+	flex-direction: row;
+	margin-top: 1em;
+}
+
+body {
+	font-family: 'feijoada';
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, p {
+	margin: 0;
+}
+
+h1, h2, h3, a.button, dt {
+	font-family: 'comics'
+}
+
+img#logo {
+	display: block;
+	max-width: 440px;
+	width: 50%;
+	margin: 6rem auto;
+}
+
+#next {
+	text-align: center;
+}
+
+#next, #how-it-works, #what-is-it {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+#flipdown { margin: 0 auto }
+
+footer {
+	display: flex;
+	flex-direction: row;
+	background-color: var(--black);
+}
+
+footer > div {
+	flex-basis: 0;
+	flex-grow: 1;
+	padding: 3rem;
+}
+
+footer, footer a {
+	color: var(--white);
+	clear: both;
+	width: 100%;
+}
+
+.footer a:hover { background-color: var(--white-hover) }
+.footer a:active { background-color: var(--white-active) }
+
+
+#basic-details {
+	display: flex;
+	flex-direction: row;
+}
+
+#basic-details > div {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 0;
+	flex-grow: 1;
+	padding: 2rem;
+	gap: 0.5em;
+}
+
+#why {
+	background-color: var(--black);
+	color: var(--white);
+}
+
+#where {
+	background-color: var(--white);
+	color: var(--black);
+}
+
+#when {
+	background-color: var(--red);
+	color: var(--white);
+}
+
+#faq {
+	padding: 8em 0;
+	background-image: url("../img/photo.jpg");
+	background-position: center center;
+	background-size: cover;
+	color: var(--cream);
+	width: 100%;
+}
+
+#faq a {
+	color: var(--white)
+}
+
+#faq a:hover { color: var(--white-hover) }
+#faq a:active { color: var(--white-active) }
+
+#faq, #faq button {
+	text-align: left;
+}
+
+#faq button {
+	color: var(--cream);
+	padding: 1em 0;
+	border-top: 1px solid var(--cream);
+}
+
+#faq button:hover { color: var(--cream-hover) }
+#faq button:active { color: var(--cream-active) }
+
+#faq h2 {
+	margin-bottom: 1em;
+}
+
+#faq h4 {
+	color: var(--white);
+}
+
+#faq h4 button:hover {
+	color: var()
+}
+
+#faq section {
+	padding: 0 0 1rem 0;
+	margin: 0;
+	/* transition: height .2s ease-in-out; */
+}
+
+@media only screen and (max-width: 767px) {
+	img#logo {
+		width: 80%
+	}
+	body {
+		padding: 1em;
+	}
+	#basic-details {
+		flex-direction: column;
+	}
+	#basic-details > div {
+		padding: 1em 2em;
+		gap: 0;
+	}
+	#flipdown > .rotor-group:last-of-type {
+		display: none;
+		visibility: hidden
+	}
+	.flipdown {
+		overflow: hidden;
+	}
+	.container > div:not(last-child) {
+		margin-bottom: 3rem;
+	}
+	h1 { font-size: 58px }
+	h2 { font-size: 40px }
+	h3, .button, legend { font-size: 24px }
+	h4 { font-size: 20px }
+	h5, dt { font-size: 18px }
+}

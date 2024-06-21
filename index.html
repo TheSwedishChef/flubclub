@@ -4,9 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Flub Club</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/flipdown.css">
+  <!-- <link rel="stylesheet" href="css/flipdown.css"> -->
+  <link rel="stylesheet" href="css/flipdown/flipdown.css">
+  <link rel="stylesheet" href="css/accordion.css">
+  <link rel="stylesheet" href="css/my-styles.css">
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -20,16 +23,180 @@
   <link rel="apple-touch-icon" href="icon.png">
 
   <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+  <meta name="theme-color" content="##FCF6EB">
+  <script src="js/flipdown/flipdown.js"></script>
+  <script src="js/app.js"></script>
+
 </head>
 
-<body>
+<body class="dark-theme">
+  <main class="container">
+    
+    <img src="img/logo-large.webp" id="logo" alt="Flub Club logo" class="clearfix">
+    
+    <div id="basic-details">
+      <div id="why">
+        <h4>What?</h4>
+        <p>Perform your song to get real feedback from other hiphop heads.</p>
+      </div>
+      <div id="where">
+        <h4>Where?</h4>
+        <p>The Music District<br>
+          639 S. College Ave<br>
+          Fort Collins, CO 80524</p>
+      </div>
+      <div id="when">
+        <h4>When?</h4>
+        <p>Second Tuesday of every month 6:00-9:00pm <abbr title="Mountain Standard Time">MST</abbr></p>
+      </div>
+    </div>
+    
+    <div id="next" class="readable">
+      <h2 class="blur-black">Next Flub Club</h2>
+      <div id="flipdown" class="flipdown"></div>
+      <p class="body-regular">6 August 2024, 6:00–9:00pm</p>
+      <p><a class="button primary" href="#">Get a Ticket <img src="icons/external-link.svg" alt="icon indicating this goes to an external link"></a></p>  
+    </div>
+    
+    <div id="what-is-it" class="readable">
+      <h2 class="blur-black">What's a Flub Club?</h2>
+      <p class="body-regular">A monthly event where hiphop heads meet to practice on stage and get feedback on their performance, have fun and socialize.</p>
+    </div>
+    
+    <div id="how-it-works" class="readable">
+      <h2 class="blur-black">How's it Work?</h2>
+      <ol class="body-regular">
+        <li>Sign up on arrival</li>
+        <li>Watch others perform, give feedback</li>
+        <li>Your turn: name the song &amp; describe the feedback you want</li>
+        <li>Perform your song</li>
+        <li>Get helpful feedback on your performance</li>
+        <li>Build connections, grow <abbr title="Northern Colorado">NoCo</abbr> hip-hop.</li>
+      </ol>
+    </div>
+    
+    <div id="email" class="readable">
+      <form id="newsletter">
+        <h3 class="blur-black">Email List</h3>
+        <fieldset>
+          <input class="body-regular" type="email" autocomplete="email" placeholder="email address" disabled>
+          <button class="button">Subscribe</button>
+        </fieldset>
+      </form>
+    </div>
+  </main>
+    
+  <div id="faq">
+    <div class="readable">
+      <h2 style="text-align: center" class="blur-white"><abbr title="Frequently Asked Questions">F.A.Q.</abbr></h2>
+  
+      <h4>
+        <button id="accordion-header-1" aria-expanded="false" aria-controls="accordion-panel-1" data-accordion-header>
+          How do I play my song?
+        </button>
+      </h4>
+      <section id="accordion-panel-1" aria-labelledby="accordion-header-1" hidden>
+        <p>Email it ahead of time to <a href="mailto:noco@flub.club">noco@flub.club</a> or have it on your phone&mdash;we have the right cable.</p>
+      </section>
+  
+      <h4>
+        <button id="accordion-header-2" aria-expanded="false" aria-controls="accordion-panel-2" data-accordion-header>
+          What's it cost?
+        </button>
+      </h4>
+      <section id="accordion-panel-2" aria-labelledby="accordion-header-2" hidden>
+        <p>There is not cover charge, but you are encouraged to donate a few bucks each session to cover the costs of promotion, refreshments. and future growth.</p>
+      </section>
+  
+      <h4>
+        <button id="accordion-header-3" aria-expanded="false" aria-controls="accordion-panel-3" data-accordion-header>
+          How many songs can I perform?
+        </button>
+      </h4>
+      <section id="accordion-panel-3" aria-labelledby="accordion-header-3" hidden>
+        <p>Each person can perform one song per club meeting. If everyone present has performed and there is more time, the coordinator may allow more performances.</p>
+      </section>
+  
+      <h4>
+        <button id="accordion-header-4" aria-expanded="false" aria-controls="accordion-panel-4" data-accordion-header>
+          Is it ONLY hiphop?
+        </button>
+      </h4>
+      <section id="accordion-panel-4" aria-labelledby="accordion-header-4" hidden>
+        <p>Any hiphop, rap, trap or related music is welcome, like R&B, reggae, trip-hop, soul, motown, lo-fi, chill-hop, etc.</p>
+      </section>
+  
+      <h4>
+        <button id="accordion-header-5" aria-expanded="false" aria-controls="accordion-panel-5" data-accordion-header>
+          My song is LONG
+        </button>
+      </h4>
+      <section id="accordion-panel-5" aria-labelledby="accordion-header-5" hidden>
+        <p>So that everyone gets their chance, we encourage you to choose a song that is under 6 minutes.</p>
+      </section>
+  
+      <h4>
+        <button id="accordion-header-6" aria-expanded="false" aria-controls="accordion-panel-6" data-accordion-header>
+          Age limit?
+        </button>
+      </h4>
+      <section id="accordion-panel-6" aria-labelledby="accordion-header-6" hidden>
+        <p>Age limits depend on the venue. The Music District in Fort Collins, Colorado has an 18+ policy.</p>
+      </section>
+  
+      <h4>
+        <button id="accordion-header-7" aria-expanded="false" aria-controls="accordion-panel-7" data-accordion-header>
+          Profanity?
+        </button>
+      </h4>
+      <section id="accordion-panel-7" aria-labelledby="accordion-header-7" hidden>
+        <p>Flub Club is 18+, and profanity is allowed.</p>
+      </section>
+  
+      <h4>
+        <button id="accordion-header-8" aria-expanded="false" aria-controls="accordion-panel-8" data-accordion-header>
+          What's NOT allowed?
+        </button>
+      </h4>
+      <section id="accordion-panel-8" aria-labelledby="accordion-header-8" hidden>
+        <p>No hate speech of any kind will be tolerated. You’ll receive one warning before you’re 86’d.</p>
+      </section>
+  
+      <h4>
+        <button id="accordion-header-9" aria-expanded="false" aria-controls="accordion-panel-9" data-accordion-header>
+          What if someone's straight whack?
+        </button>
+      </h4>
+      <section id="accordion-panel-9" aria-labelledby="accordion-header-9" hidden>
+        <p>You were whack once, too. Give the feedback you needed back then. We’re here to build up, not tear down.</p>
+      </section>
+  
+    </div>
+  </div>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js"></script>
-  <script src="js/flipdown.js"></script>
-  <div id="flipdown" class="flipdown"></div>
+  
+  <footer>
+    <div>
+      <h4>Location</h4>
+      <p>The Music District<br>
+        639 S. College Ave<br>
+        Fort Collins, CO 80524</p>
+    </div>
+    <div>
+      <h4>When</h4>
+      <p>Every 2nd Tuesday night 6-9pm</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>Coordinator: <a href="https://hygiene.hiphop" target="_blank">Hygiene</a><br>
+        Email <a href="mailto:noco@flub.club">noco@flub.club</a></p>
+    </div>
+    <div>
+      <h4>Social</h4>
+      <p>We’re not on social! Visit this site for updates!<br>
+        flub dot club</p>
+    </div>
+  </footer>
+  <script src="js/accordion.js"></script>
 </body>
-
 </html>
