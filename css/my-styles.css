@@ -78,11 +78,14 @@ ol {
 .container {
 	max-width: 960px;
 	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 8em;
 }
 
-.container > div:not(last-child) {
+/* .container > div:not(last-child) {
 	margin-bottom: 8rem;
-}
+} */
 
 .readable, #faq > div {
 	max-width: 700px;
@@ -94,8 +97,8 @@ a { text-decoration: underline; color: #231C18; }
 .button {
 	text-decoration: none;
 	text-transform: uppercase;
-	background-color: var(--red);;
-	color: var(--white);;
+	background-color: var(--red);
+	color: var(--white);
 	height: 4rem;
 	line-height: 4rem;
 	display: inline-block !important;
@@ -103,7 +106,6 @@ a { text-decoration: underline; color: #231C18; }
 	border: 0 none;
 	outline: 0;
 	cursor: pointer;
-	/* transition: all .2s ease-in-out; */
 }
 
 .button:hover { background-color: var(--red-hover) }
@@ -134,7 +136,7 @@ form#newsletter {
 	margin: 0 auto;
 }
 
-fieldset {
+fieldset, .ml-block-form {
 	display: flex;
 	flex-direction: row;
 	margin-top: 1em;
@@ -186,9 +188,13 @@ footer > div {
 }
 
 footer, footer a {
-	color: var(--white);
+	color: var(--cream);
 	clear: both;
 	width: 100%;
+}
+
+footer h4 {
+	color: var(--white);
 }
 
 .footer a:hover { background-color: var(--white-hover) }
@@ -272,17 +278,53 @@ footer, footer a {
 }
 
 @media only screen and (max-width: 767px) {
-	img#logo {
-		width: 80%
+	html {
+		font-size: 1.25em; /* 20px */
+		line-height: 1.125;
 	}
-	body {
+	#faq {
+		padding: 4em 1em;
+		width: 100%;
+	}
+	footer {
+		flex-direction: column;
 		padding: 1em;
+		gap: 1em;
+		width: auto;
 	}
+	footer > div {
+		flex-basis: 0;
+		flex-grow: 1;
+		padding: 0;
+	}
+	.button {
+		height: 2.75em;
+		line-height: 2.75em;
+		padding: 0 1em;
+	}
+	input[type=email] {
+		height: 2.75em;
+		padding: 0 1em;
+		line-height: 2.75em;
+	}
+	img#logo {
+		width: 80%;
+		margin: 3rem auto;
+	}
+	fieldset, .ml-block-form {
+		flex-direction: column;
+	}
+	.container {
+		padding: 0 1em;
+		margin: 0 auto;
+		gap: 4em;
+	}
+
 	#basic-details {
 		flex-direction: column;
 	}
 	#basic-details > div {
-		padding: 1em 2em;
+		padding: 1em;
 		gap: 0;
 	}
 	#flipdown > .rotor-group:last-of-type {
@@ -292,12 +334,17 @@ footer, footer a {
 	.flipdown {
 		overflow: hidden;
 	}
-	.container > div:not(last-child) {
+	/* .container > div:not(last-child) {
 		margin-bottom: 3rem;
-	}
+	} */
 	h1 { font-size: 58px }
-	h2 { font-size: 40px }
+	h2 { font-size: 32px }
 	h3, .button, legend { font-size: 24px }
 	h4 { font-size: 20px }
 	h5, dt { font-size: 18px }
+	.subtitle { font-size: 40px }
+	.body-regular { font-size: 22px }
+	.body-medium { font-size: 22px }
+	.body-small { font-size: 18px }
+
 }
