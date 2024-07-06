@@ -4,14 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
   var twoDaysFromNow = (new Date().getTime() / 1000) + (86400 * 2) + 1;
 
   // Set up FlipDown - visit https://www.unixtimestamp.com and enter the unix code
-  var flipdown = new FlipDown(1719361800)
+  var flipdown = new FlipDown(1720236580)
 
     // Start the countdown
     .start()
 
     // Do something when the countdown ends
     .ifEnded(() => {
-      console.log('The countdown has ended!');
+      console.log('The time has come!');
       body.querySelector('#flipdown').classList.toggle('hidden');
     });
 
