@@ -163,8 +163,10 @@ h1, h2, h3, a.button, dt {
 
 img#logo {
 	display: block;
-	max-width: 440px;
-	width: 50%;
+	height: auto; 
+	width: auto; 
+	max-width: 372px; 
+	max-height: 377.8px;
 	margin: 6em auto 0 auto;
 }
 
@@ -321,7 +323,8 @@ footer h4 {
 		line-height: 2.75em;
 	}
 	img#logo {
-		width: 80%;
+		max-width: 310px; 
+		max-height: 315px;
 		margin: 4em auto 0 auto;
 	}
 	fieldset, .ml-block-form {
