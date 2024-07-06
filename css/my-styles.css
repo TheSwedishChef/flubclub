@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5 {
 	text-transform: uppercase;
 }
 
-.blur-black {
+/* .blur-black {
 	text-shadow: 0 0 1.5px var(--black);
 }
 .blur-white {
@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5 {
 }
 .blur-cream {
 	text-shadow: 0 0 1.5px var(--cream);
-}
+} */
 
 .subtitle { font-size: 44px }
 .body-regular { font-size: 28px }
@@ -211,7 +211,7 @@ footer h4 {
 #basic-details {
 	display: flex;
 	flex-direction: row;
-	max-width: 728px;
+	max-width: 798px;
 	margin: 0 auto;
 }
 
