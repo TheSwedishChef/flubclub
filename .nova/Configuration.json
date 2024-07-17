@@ -1,4 +1,5 @@
 {
-  "workspace.name" : "Flub CLub",
+  "workspace.color" : 14,
+  "workspace.name" : "Flub Club",
   "workspace.preview_root" : "."
 }
