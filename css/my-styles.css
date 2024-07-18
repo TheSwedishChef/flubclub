@@ -145,7 +145,7 @@
 .shine figure::before {
 	position: absolute;
 	top: 0;
-	left: -75%;
+	left: -100%;
 	z-index: 2;
 	display: block;
 	content: '';
@@ -172,7 +172,7 @@
 }
 
 html {
-	color: #231C18;
+	color: var(--black);
 	font-size: 1.25em; /* 20px */
 	line-height: 1.125;
 }
@@ -248,7 +248,7 @@ ol {
 	margin: 0 auto;
 }
 
-a { text-decoration: underline; color: #231C18; }
+a { text-decoration: underline; color: var(--black); }
 
 .button {
 	text-decoration: none;
