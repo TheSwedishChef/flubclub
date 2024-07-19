@@ -15,6 +15,10 @@
 	--cream-active: #C6B9A3;
 }
 
+.nowrap {
+	white-space: nowrap;
+}
+
 .bounce-top {
 	-webkit-animation: bounce-top 0.9s both;
 					animation: bounce-top 0.9s both;
