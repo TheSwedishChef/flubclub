@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   var twoDaysFromNow = (new Date().getTime() / 1000) + (86400 * 2) + 1;
 
   // Set up FlipDown - visit https://www.unixtimestamp.com and enter the unix code
-  var flipdown = new FlipDown(1738720800)
+  var flipdown = new FlipDown(1742688000)
 
     // Start the countdown
     .start()
